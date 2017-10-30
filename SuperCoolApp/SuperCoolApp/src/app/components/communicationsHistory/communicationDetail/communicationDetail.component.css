@@ -1,0 +1,99 @@
+.ui-widget-header {
+    background: #0079C8 !important;
+    font-size: 10px !important;
+    padding: 4px 10px;
+    border-bottom: 0 none;
+    float: left;
+    width: 100%
+}
+label {
+    font-size: 10px !important;
+}
+.fontBold {
+    font-weight:bold !important;
+}
+    .ui-widget-header a#lnkRefresh {
+        float: right;
+        /*margin-right: 10px;*/
+    }
+
+        .ui-widget-header a#lnkRefresh span.glyphicon-repeat {
+            color: #fff0f5 !important;
+            cursor: pointer;
+            z-index: 999;
+        }
+.mdl_input_block {
+    position: relative;
+    overflow: hidden;
+}
+
+    .mdl_input_block:hover:after {
+        -ms-transform: translateZ(0px) translate(0%, 0);
+        -webkit-transform: translateZ(0px) translate(0%, 0);
+        transform: translateZ(0px) translate(0%, 0);
+    }
+
+    .mdl_input_block .mdl_input {
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+        height: 30px;
+        padding: 5px 1%;
+        border: none;
+        border-bottom: 2px solid #eee;
+        border-radius: 0;
+        color: #76719a;
+        box-shadow: none;
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    }
+
+        .mdl_input_block .mdl_input:focus {
+            border-bottom-color: #36bae2;
+        }
+
+        .mdl_input_block .mdl_input.ng-dirty.ng-touched.ng-invalid {
+            border-bottom-color: red
+        }
+
+.error-label {
+    padding-top: 0.5em;
+    color: #F22613
+}
+
+input[readonly] {
+    background-color: #FFFFFF;
+    font-size: 11px;
+}
+
+.form-group {
+    margin-bottom: 5px !important;
+}
+
+.payment-detail {
+    font-size: 10px;
+}
+
+.fix-label-margin label {
+    margin-bottom: 0px !important;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    margin: 0 10px;
+    text-decoration: none;
+}
+.lastrow-top-boder {
+    border-top: 2px solid #eee;
+    margin-left:15px;
+}

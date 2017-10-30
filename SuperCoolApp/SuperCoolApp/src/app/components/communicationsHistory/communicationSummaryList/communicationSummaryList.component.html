@@ -1,0 +1,41 @@
+<div class='col-sm-12 padding-zero'>
+    <div class="row">
+        <div class="col-sm-12 ui-widget-header" style="padding:4px 10px;border-bottom: 0 none;float: left;width: 98.3%">
+            <a id="lnkRefresh" (click)="refreshData()"><span class="glyphicon glyphicon-repeat"></span></a>
+        </div>
+        <div class="col-sm-12" style="padding:4px 10px;border-bottom: 0 none;float: left;width: 98.3%">
+            <kendo-grid id="grid" [data]="gridView"
+                        [pageSize]="state.take"
+                        [skip]="state.skip"
+                        [selectable]="true"
+                        (selectionChange)="onSelect($event)"
+                        (sortChange)="sortChange($event)"
+                        [sort]="state.sort"
+                        [filter]="state.filter"
+                        [pageable]="true"
+                        (dataStateChange)="dataStateChange($event)"
+                        (pageChange)="pageChange($event)"
+                        [filterable]="true"
+                        [sortable]="true"
+                        [kendoGridSelectBy]="sentOnText"
+                        [selectedKeys]="mySelection"
+                        [height]="'auto'"
+                        [scrollable]="'none'">
+
+                <kendo-grid-column [headerClass]="{'headerClass': true}" field="category" title="Category"></kendo-grid-column>
+                <kendo-grid-column [headerClass]="{'headerClass': true}" [class]="{'textRight': true}" field="description" title="Description"></kendo-grid-column>
+                <kendo-grid-column [headerClass]="{'headerClass': true}" [class]="{'textRight': true}" field="sentOnText" title="Sent On"></kendo-grid-column>
+                <kendo-grid-column *ngIf="isShowMembershipColumn" [headerClass]="{'headerClass': true}" field="recipient" title="Recipient"></kendo-grid-column>
+                <kendo-grid-column *ngIf="!isShowMembershipColumn" [headerClass]="{'headerClass': true}" field="recipient" title="Membership Number"></kendo-grid-column>
+                <kendo-grid-column [headerClass]="{'headerClass': true}" field="deliveryMethodDescription" title="Method of Contact"></kendo-grid-column>
+
+                <ng-template kendoPagerTemplate let-totalPages="totalPages" let-currentPage="currentPage">
+                    <kendo-pager-prev-buttons></kendo-pager-prev-buttons>
+                    <kendo-pager-info></kendo-pager-info>
+                    <kendo-pager-numeric-buttons [buttonCount]="10"></kendo-pager-numeric-buttons>
+                    <kendo-pager-next-buttons></kendo-pager-next-buttons>
+                </ng-template>
+            </kendo-grid>
+        </div>
+    </div>
+</div>

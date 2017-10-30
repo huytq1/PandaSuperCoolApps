@@ -1,0 +1,20 @@
+<div class='col-sm-12'>
+    <div class="row">
+        <div class='col-sm-6 padding-zero'>
+            <div class="row" [hidden]="isShowDocumentList">
+                <communication-summary [membershipId]="membershipId" [personId]="personId" [lanId]="lanId" (onCommunicationSummaryChanged)="on_CommunicationSummaryChanged($event)"></communication-summary>
+            </div>
+            <div class="row" [hidden]="!isShowDocumentList">
+                <communication-documents [communicationDetail]="communicationDetail"></communication-documents>
+            </div>
+        </div>
+        <div class='col-sm-6 padding-zero'>
+            <div    [hidden]="!isShowDocumentList">
+                <communication-status-history [communicationDetail]="communicationDetail" (onLessViewClicked)="on_MoreViewClicked($event)"></communication-status-history>
+            </div>
+            <div [hidden]="isShowDocumentList">
+                <communication-detail [communicationDetail]="communicationDetail" [lanId]="lanId" (onMoreViewClicked)="on_MoreViewClicked($event)"> </communication-detail>
+            </div>
+        </div>
+    </div>
+</div>

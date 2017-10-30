@@ -1,0 +1,29 @@
+.ui-widget-header {
+    background: #0079C8 !important;
+}
+
+.ui-widget-header a#lnkRefresh {
+    float: right;
+}
+
+.ui-widget-header a#lnkRefresh span.glyphicon-repeat{
+    color: #fff0f5 !important;
+    cursor: pointer;
+    z-index: 999;
+}
+.btnDialog .k-button {
+    color: #27008a !important;
+}
+
+.k-button:active[target=btnCancel], .k-button-group .k-button:active:hover .k-grid td.k-state-selected[target=btnCancel], .k-grid tr.k-state-selected [target=btnCancel] {
+    color: #fff;
+    background-color: #64a1d5 !important;
+}
+
+.k-button[target=btnDialog] {
+    color: #27008a !important;;
+}
+
+.btnDialogAction {
+    float: right;
+}

@@ -1,0 +1,49 @@
+<div>
+    <div class="col-sm-12 ui-widget-header" style="border-bottom: 0 none;float: left;width: 100%;height:23px;">
+    </div>
+    <div class="col-sm-12" style="padding-left:1px;">
+        <kendo-grid id="grid" [data]="gridView"
+                    [pageSize]="state.take"
+                    [skip]="state.skip"
+                    [selectable]="true"
+                    (selectionChange)="onSelect($event)"
+                    (sortChange)="sortChange($event)"
+                    [sort]="state.sort"
+                    [filter]="state.filter"
+                    [pageable]="true"
+                    (dataStateChange)="dataStateChange($event)"
+                    (pageChange)="pageChange($event)"
+                    [filterable]="true"
+                    [sortable]="true"
+                    [kendoGridSelectBy]="title"
+                    [height]="'auto'"
+                    [scrollable]="'none'">
+
+            <kendo-grid-column [headerClass]="{'headerClass': true}" field="title" title="Description">
+                <ng-template kendoGridCellTemplate let-dataItem let-rowIndex="rowIndex">
+                    <div *ngIf="((dataItem.documentAccessMode==2 && dataItem.smsText=='') || (dataItem.documentAccessMode!=2 && dataItem.url=='' ))">
+                        <span>{{dataItem.title}}</span>
+                    </div>
+                    <div *ngIf="((dataItem.documentAccessMode!=2 && dataItem.url!='') ||(dataItem.documentAccessMode==2 && dataItem.smsText!=''))">
+                        <a href="#" (click)="on_HyperlinkClicked(dataItem)">{{dataItem.title}}</a>
+                    </div>
+                </ng-template>
+
+            </kendo-grid-column>
+
+            <ng-template kendoPagerTemplate let-totalPages="totalPages" let-currentPage="currentPage">
+                <kendo-pager-prev-buttons></kendo-pager-prev-buttons>
+                <kendo-pager-info></kendo-pager-info>
+                <kendo-pager-numeric-buttons [buttonCount]="state.take"></kendo-pager-numeric-buttons>
+                <kendo-pager-next-buttons></kendo-pager-next-buttons>
+            </ng-template>
+        </kendo-grid>
+
+        <kendo-dialog *ngIf="isShowPopup" (close)="on_PopupClosed('cancel')">
+            <p style="margin: 30px; text-align: center;">{{messagePopup}}</p>
+            <div class="btnDialogAction">
+                <button class="k-button" target="btnDialog" kendoButton (click)="on_PopupClosed('cancel')">OK</button>
+            </div>
+        </kendo-dialog>
+    </div>
+</div>

@@ -1,0 +1,94 @@
+<div class='row'>
+    <div class="col-xs-12 ui-widget-header" style="padding:2px 0px; margin-left:30px; border-bottom: 0 none;float: left;width: 95%">
+        <ul>
+            <li><a href="#" (click)="on_VisibleChanged(true)">More</a></li>
+            <li><a href="#" (click)="on_VisibleChanged(true)"><span class="glyphicon glyphicon-chevron-left"></span></a></li>
+        </ul>
+    </div>
+    <div class="col-xs-12">
+        <div class='col-xs-12'>
+            <div class='form-group mdl_input_block fix-label-margin'>
+                <div class='col-xs-3'>
+                    <label>Status Date</label>
+                    <input type='text' class='form-control mdl_input' minlength='2' maxlength='25' [value]="communicationDetail.requestedOntext" disabled readonly>
+                </div>
+                <div class='col-xs-3'>
+                    <label>Status</label>
+                    <input type='text' class='form-control mdl_input' minlength='2' maxlength='25' [value]="communicationDetail.status" disabled readonly>
+                </div>
+                <div class='col-xs-3'>
+                    <label>Requested On</label>
+                    <input type='text' class='form-control mdl_input' minlength='2' maxlength='25' [value]="communicationDetail.requestedOntext" disabled readonly>
+                </div>
+                <div class='col-xs-3'>
+                    <label>Generated On</label>
+                    <input type='text' class='form-control mdl_input' minlength='2' maxlength='25' [value]="communicationDetail.generatedOnText" disabled readonly>
+                </div>
+            </div>
+        </div> 
+        <div class="col-xs-12 lastrow-top-boder"></div>
+        <div class='col-xs-12'>
+            
+            <div class='form-group mdl_input_block'>
+                <div class='col-xs-6'>
+                    <div class="col-xs-6 padding-top">
+                        <label>Communication Details</label>
+                    </div>
+                    <div class="col-xs-6 padding-right-zero">
+                        <input type='text' class='form-control mdl_input' minlength='2' maxlength='25' [value]="communicationDetail.detail" disabled readonly>
+                    </div>
+                </div>
+                <div class='col-xs-6' [hidden]="communicationDetail.isBundledText!='Yes'">
+                    <div class="col-xs-6 padding-top">
+                        <label>Bundle?</label>
+                    </div>
+                    <div class="col-xs-6 padding-right-zero">
+                        <input type='text' class='form-control mdl_input fontBold' minlength='2' maxlength='25' [value]="communicationDetail.isBundledText" disabled readonly>
+                    </div>
+                </div>
+
+            </div>
+            <div class='form-group mdl_input_block'>
+                <div class='col-xs-6'>
+                    <div class="col-xs-6 padding-top">
+                        <label>Summary</label>
+                    </div>
+                    <div class="col-xs-6 padding-right-zero">
+                        <input type='text' class='form-control mdl_input' minlength='2' maxlength='25' [value]="communicationDetail.category" disabled readonly>
+                    </div>
+                </div>
+            </div>
+            <div class='form-group mdl_input_block'>
+                <div class='col-xs-6'>
+                    <div class="col-xs-6 padding-top">
+                        <label>Category</label>
+                    </div>
+                    <div class="col-xs-6 padding-right-zero">
+                        <input type='text' class='form-control mdl_input' minlength='2' maxlength='25' [value]="communicationDetail.category" disabled readonly>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 lastrow-top-boder "></div>
+        <div class='col-xs-12'>
+            <div class='form-group mdl_input_block fix-label-margin'>
+                <div class='col-xs-3'>
+                    <label>Recipient</label>
+                    <input type='text' class='form-control mdl_input' minlength='2' maxlength='25' [value]="communicationDetail.recipient" disabled readonly>
+                </div>
+                <div class='col-xs-3'>
+                    <label>Sent To</label>
+                    <input type='text' class='form-control mdl_input' minlength='2' maxlength='25' [value]="communicationDetail.sentTo" disabled readonly>
+                </div>
+                <div class='col-xs-3'>
+                    <label>User</label>
+                    <input type='text' class='form-control mdl_input' minlength='2' maxlength='25' [value]="communicationDetail.sentBy" disabled readonly>
+                </div>
+                <div class='col-xs-3'>
+                    <label>Comm ID</label>
+                    <input type='text' class='form-control mdl_input' minlength='2' maxlength='25' [value]="communicationDetail.commId" disabled readonly>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

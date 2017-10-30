@@ -1,0 +1,42 @@
+﻿<div >
+    <div class="col-sm-12 ui-widget-header" style="padding-left:30px;border-bottom: 0 none;float: left;width: 100%;">
+        <ul>
+            <li><a href="#" (click)="on_VisibleChanged(false)">Less</a></li>
+            <li><a href="#" (click)="on_VisibleChanged(false)"><span class="glyphicon glyphicon-chevron-right"></span></a></li>
+        </ul>
+    </div>
+    <div class="col-sm-12" style="padding:1px;" >
+        <kendo-grid id="grid" [data]="gridView"
+                    [pageSize]="state.take"
+                    [skip]="state.skip"
+                    [selectable]="true"
+                    (selectionChange)="onSelect($event)"
+                    (sortChange)="sortChange($event)"
+                    [sort]="state.sort"
+                    [filter]="state.filter"
+                    [pageable]="true"
+                    (dataStateChange)="dataStateChange($event)"
+                    (pageChange)="pageChange($event)"
+                    [filterable]="true"
+                    [sortable]="true"
+                    [kendoGridSelectBy]="recipient"
+                    [selectedKeys]="mySelection"
+                    [height]="'auto'"
+                    [scrollable]="'none'">
+
+            <kendo-grid-column [headerClass]="{'headerClass': true}" field="sentOnText" title="Sent On"></kendo-grid-column>
+            <kendo-grid-column [headerClass]="{'headerClass': true}" [class]="{'textRight': true}" field="recipient" title="Recipient"></kendo-grid-column>
+            <kendo-grid-column [headerClass]="{'headerClass': true}" [class]="{'textRight': true}" field="communicationChannel" title="Method of Contact"></kendo-grid-column>
+            <kendo-grid-column [headerClass]="{'headerClass': true}" field="eventStatusDetail" title="Contact Detail"></kendo-grid-column>
+            <kendo-grid-column [headerClass]="{'headerClass': true}" field="eventStatus" title="Status"></kendo-grid-column>
+
+
+            <ng-template kendoPagerTemplate let-totalPages="totalPages" let-currentPage="currentPage">
+                <kendo-pager-prev-buttons></kendo-pager-prev-buttons>
+                <kendo-pager-info></kendo-pager-info>
+                <kendo-pager-numeric-buttons [buttonCount]="10"></kendo-pager-numeric-buttons>
+                <kendo-pager-next-buttons></kendo-pager-next-buttons>
+            </ng-template>
+        </kendo-grid>
+    </div>
+</div>

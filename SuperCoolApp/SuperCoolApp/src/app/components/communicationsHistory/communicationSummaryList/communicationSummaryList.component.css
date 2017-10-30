@@ -1,0 +1,71 @@
+.ui-widget-header {
+    background: #0079C8 !important;
+}
+
+.ui-widget-header a#lnkRefresh {
+    float: right;
+}
+
+.ui-widget-header a#lnkRefresh span.glyphicon-repeat{
+    color: #fff0f5 !important;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.not-hightlight {
+    color: #DEDEDC;
+}
+
+.ui-state-highlight .not-hightlight {
+    color: #000000 !important;
+}
+
+.fix-padding-top {
+    padding-top: 2px;
+}
+
+.primary[target=btnCancel] {
+    background-color: #0079C8 !important;
+    background-image: none;
+    color: #fff;
+    border-color: #0079C8;
+    min-width: 70px;
+    margin: 5px 0 0 5px;
+    padding: 4px 18px;
+    font-size: 12px;
+}
+
+.primary:hover[target=btnCancel] {
+    background-color: #64a1d5 !important;
+    color: #fff;
+    border-color: #64a1d5;
+}
+.primary.k-state-disabled[target=btnCancel], .primary.k-sta te-disabled:hover[target=btnCancel] {
+    background-color: #7ab1e1;
+    color: #fff;
+    border-color: #7ab1e1;
+}
+
+.btnDialog .k-button {
+    color: #27008a !important;
+}
+
+.k-button:active[target=btnCancel], .k-button-group .k-button:active:hover .k-grid td.k-state-selected[target=btnCancel], .k-grid tr.k-state-selected [target=btnCancel] {
+    color: #fff;
+    background-color: #64a1d5 !important;
+}
+
+.k-button[target=btnDialog] {
+    color: #27008a;
+}
+
+.k-state-selected[target=btnCancel] {
+    color: #fff;
+    background-color: #64a1d5;
+    border-color: rgba(0,0,0,.1);
+}
+
+.btnDialogAction {
+    float: right;
+}
+

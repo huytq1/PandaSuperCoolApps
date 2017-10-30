@@ -1,7 +1,7 @@
 ﻿{
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "project": {
-    "name": "super-cool-app"
+    "name": "Payment Enquires and Claims"
   },
   "apps": [
     {
@@ -11,7 +11,7 @@
         "assets",
         "favicon.ico"
       ],
-      "index": "index.html",
+      "index": "communicationsHistoryIndex.html",
       "main": "communicationsHistoryMain.ts",
       "polyfills": "polyfills.ts",
       "test": "test.ts",
