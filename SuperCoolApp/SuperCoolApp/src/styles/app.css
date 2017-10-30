@@ -1,0 +1,594 @@
+﻿kendo-grid-filter-cell-operators {
+  display: none;
+}
+
+.k-icon.k-i-sort-desc-sm:before {
+  content: "\e006" !important;
+  color: black;
+}
+
+.k-icon.k-i-sort-asc-sm:before {
+  content: "\e004" !important;
+  color: black;
+}
+
+.k-grid-header .k-header > .k-link > .k-icon {
+  position: absolute !important;
+}
+
+tr .textRight {
+  text-align: right !important;
+}
+
+tr .headerClass {
+  font-weight: bold !important;
+  text-align: center !important;
+}
+
+.k-grid th {
+  white-space: normal !important;
+}
+
+.k-grid-header .k-header {
+  vertical-align: middle !important;
+}
+
+
+html, body {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 10px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+table {
+  font-size: 10px;
+}
+
+.form-control {
+  font-size: 10px;
+}
+
+.active {
+  visibility: visible;
+}
+
+.app-table th {
+  /*background-color: #007DBA !important;*/
+  color: black;
+}
+
+.app-table tbody tr:hover {
+  /*color: #3498db !important;*/
+  cursor: pointer;
+}
+
+
+.app-container {
+  width: 95%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.required-label::after {
+  content: " *";
+  color: #F22613;
+}
+
+.error-text {
+  color: #F22613;
+}
+
+input.ng-invalid {
+  border-bottom-color: #F22613;
+}
+
+.btn-sm-round {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  line-height: 2.8;
+  border-radius: 50%;
+  text-align: center;
+  display: inline-block;
+  font-size: 8pt;
+}
+
+.btn-round {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #13B5EA;
+  /*#007DBA;#FFAD33*/
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+  display: inline-block;
+}
+
+.btn-hints {
+  display: none;
+  /*visibility: hidden;*/
+}
+
+.btn-round:hover + .btn-hints {
+  /*visibility: visible;*/
+  display: inline;
+  color: #004165;
+}
+
+.btn-round-simple {
+  cursor: pointer;
+  width: 43px;
+  height: 43px;
+  line-height: 43px;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #ddd;
+  /*#007DBA;*/
+  text-align: center;
+  display: inline-block;
+  margin: 6px;
+}
+
+  .btn-round-simple:hover {
+    background-color: #007DBA;
+  }
+
+    .btn-round-simple:hover .subtitle {
+      display: inline;
+    }
+
+.btn-active {
+  background-color: #004165;
+}
+
+.step {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  display: inline-block;
+  font-size: 16pt;
+  font-weight: bold;
+  background-color: #1abc9c;
+  color: #fff;
+}
+
+.sys-step {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  display: inline-block;
+  font-size: 16pt;
+  font-weight: bold;
+  background-color: #34495e;
+  color: #1abc9c;
+}
+
+.inactive {
+  background-color: #95a5a6;
+  color: #8CDDCD;
+  cursor: default;
+}
+
+.step:hover {
+  background-color: #16a085;
+}
+
+
+/*Rounded and Circle Classes
+------------------------------------*/
+
+.no-rounded {
+  border-radius: 0 !important;
+}
+
+.rounded {
+  border-radius: 4px !important;
+}
+
+.rounded-x {
+  border-radius: 50% !important;
+}
+
+.rounded-2x {
+  border-radius: 10px !important;
+}
+
+.rounded-3x {
+  border-radius: 15px !important;
+}
+
+.rounded-4x {
+  border-radius: 20px !important;
+}
+
+.rounded-sm {
+  border-radius: 2px !important;
+}
+
+.rounded-md {
+  border-radius: 3px !important;
+}
+
+.rounded-top {
+  border-radius: 4px 4px 0 0 !important;
+}
+
+.rounded-left {
+  border-radius: 4px 0 0 4px !important;
+}
+
+.rounded-right {
+  border-radius: 0 4px 4px 0 !important;
+}
+
+.rounded-bottom {
+  border-radius: 0 0 4px 4px !important;
+}
+
+
+/*Others
+------------------------------------*/
+
+.overflow-h {
+  overflow: hidden;
+}
+
+.overflow-a {
+  overflow: auto;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.clear-both {
+  clear: both;
+}
+/*change primeng grid style*/
+.ui-datatable th.ui-state-default {
+  background: #f3f3f3;
+  border-color: #d4d4d4;
+}
+
+.ui-datatable th.ui-state-active {
+  background: #f3f3f3;
+  border-color: #d4d4d4;
+  color: black;
+}
+
+.ui-datatable tbody > tr.ui-widget-content.ui-state-highlight {
+  background-color: #B1D6F0 !important;
+  border-color: #B1D6F0;
+  color: black;
+}
+
+.ui-state-highlight span.glyphicon-ok {
+  color: black;
+}
+
+.ui-datatable .ui-datatable-thead > tr > th {
+  font-weight: bold;
+}
+
+.ui-datatable-odd {
+  background-color: #f3f3f3 !important;
+}
+
+
+.ui-paginator-next:after {
+  content: "Next" !important;
+  border: none !important;
+  color: #6495ED !important;
+  background: linear-gradient(to bottom, #f6f7f9 0%, #ebedf0 100%) !important;
+}
+
+.ui-paginator-prev:after {
+  content: "Previous" !important;
+  border: none !important;
+  color: #6495ED !important;
+  background: linear-gradient(to bottom, #f6f7f9 0%, #ebedf0 100%) !important;
+}
+
+.ui-paginator-last, .ui-paginator-first, .fa-forward, .fa-backward {
+  display: none !important;
+}
+
+.hide-prev-next .ui-paginator-next, .hide-prev-next .ui-paginator-prev {
+  visibility: hidden;
+}
+
+.ui-datatable-footer {
+  height: 33px !important;
+}
+
+.ui-paginator {
+  border: none !important;
+}
+
+.ui-state-disabled {
+  visibility: hidden !important;
+}
+
+.ui-paginator-page {
+  border: none !important;
+  color: #6495ED !important;
+  text-decoration: underline;
+}
+
+.ui-paginator-bottom {
+  display: none !important;
+}
+
+.payment-history-width {
+  min-width: 1000px;
+}
+
+.communications-history-width {
+  min-width: 1000px;
+}
+
+input[type=text]::-ms-clear {
+  display: none;
+}
+
+.ui-paginator .ui-paginator-pages .ui-paginator-page {
+  background: linear-gradient(to bottom, #f6f7f9 0%, #ebedf0 100%);
+}
+
+  .ui-paginator .ui-paginator-pages .ui-paginator-page:hover {
+    background: linear-gradient(to bottom, #f6f7f9 0%, #ebedf0 100%) !important;
+    text-decoration: underline;
+  }
+
+.ui-paginator .ui-paginator-pages .ui-state-active {
+  color: #000 !important;
+  text-decoration: none !important;
+  pointer-events: none;
+}
+
+/*Disable multiple user selection*/
+* {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -moz-user-select: none; /* Firefox */
+}
+
+.padding-zero {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.padding-top {
+  padding: 6px 0px 0px 0px;
+}
+
+.ui-datatable .ui-datatable-thead .ui-state-default {
+  font-size: 11px !important;
+}
+
+.ui-datatable .ui-datatable-data .ui-widget-content {
+  font-size: 11px !important;
+  font-family: Segoe UI !important;
+}
+
+.ui-datatable .ui-datatable-footer {
+  font-size: 12px !important;
+}
+
+.ui-paginator-next, .ui-paginator-prev {
+  border: none !important;
+  display: inline-flex !important;
+  padding: 0 !important;
+}
+
+.padding-right-zero {
+  padding-right: 0;
+}
+
+.ui-calendar {
+  width: 94%;
+}
+
+  .ui-calendar input.ui-inputtext {
+    border: 0px;
+    width: 100%;
+    font-weight: bold;
+    padding-top: 7px;
+  }
+
+    .ui-calendar input.ui-inputtext:focus {
+      outline: none;
+      box-shadow: none;
+    }
+
+  .ui-calendar .ui-state-disabled {
+    visibility: visible !important;
+  }
+
+.ui-datepicker {
+  width: 20em;
+}
+
+.input-group-dollar {
+  display: inline-flex;
+}
+
+  .input-group-dollar i {
+    padding-top: 8px;
+    padding-right: 3px;
+  }
+
+.padding-bottom-zero {
+  padding-bottom: 0 !important;
+}
+
+.refund-confirm {
+  margin-left: 15px !important;
+}
+
+
+.confirm-btn {
+  text-decoration: none;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  color: rgba(255,255,255,0.87) !important;
+  width: 30px;
+  height: 30px;
+  padding: 0 0;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  min-height: 36px;
+  min-width: 88px;
+  line-height: 36px;
+  vertical-align: middle;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-grid-row-align: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 3px;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  border: 0;
+  padding: 0 6px;
+  margin: 20px 0 0 0;
+  background: transparent;
+  color: currentColor;
+  white-space: nowrap;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 12px;
+  font-style: inherit;
+  font-family: inherit;
+  text-decoration: none;
+  overflow: hidden;
+  -webkit-transition: box-shadow 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), background-color 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: box-shadow 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), background-color 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  background-color: #0079c8;
+}
+
+  .confirm-btn:hover {
+    background-color: rgb(63,81,181);
+    text-decoration: none;
+  }
+
+  .confirm-btn:visited, .confirm-btn:active, .confirm-btn:focus {
+    text-decoration: none;
+  }
+
+  .confirm-btn:disabled {
+    background-color: grey;
+    cursor: not-allowed;
+  }
+
+.input-text {
+  text-indent: 3px !important;
+}
+
+
+
+.confirm-btn-disabled {
+  background-color: grey;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+  .confirm-btn-disabled:hover {
+    background-color: grey;
+    text-decoration: none;
+  }
+
+  .confirm-btn-disabled:visited {
+    background-color: grey;
+    text-decoration: none;
+  }
+
+.daily-rate-table div.row {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.daily-rate-table .first-row {
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  border-bottom: 1px solid #ddd !important;
+}
+
+.daily-rate-table div.col-md-4 {
+  padding-left: 0;
+  font-weight: bold;
+  line-height: 24px;
+}
+
+.daily-rate-table div.col-md-8 {
+  text-align: right;
+  line-height: 24px;
+  font-size: 10px;
+}
+
+.primary-confirm-btn {
+  background-color: #fff !important;
+  color: #000 !important;
+}
+
+  .primary-confirm-btn:hover {
+    opacity: 0.8;
+  }
+
+.paymentDetailDropdown {
+  width: 65%;
+  position: absolute;
+  border: 1px solid #2399e5;
+}
+
+  .paymentDetailDropdown button {
+    width: 100%;
+    background-color: #fff;
+    border: 0;
+    padding: 0;
+    text-align: left;
+    font-size: 10px;
+    padding-left: 3px;
+  }
+
+    .paymentDetailDropdown button:hover {
+      background-color: #2399e5;
+      color: #fff;
+    }
+
+.component-kendo-grid {
+  font-size: 11px;
+}
+
+  .component-kendo-grid .k-grid-pager {
+    font-size: 11px;
+    padding-right: 35px;
+  }
+
+.component-data-not-available {
+  padding-left: 10px;
+  height: 195px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 195px;
+  font-size: 28px;
+  font-weight: bold;
+  opacity: 0.25;
+  width: 100%;
+}
+
+.cover-summary-container .k-content {
+  overflow: hidden;
+}

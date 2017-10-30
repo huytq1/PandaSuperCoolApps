@@ -1,0 +1,59 @@
+﻿kendo-grid-filter-cell-operators {
+  display: none;
+}
+
+.k-grid td.k-state-selected, .k-grid tr.k-state-selected {
+  color: inherit !important;
+  background-color: rgba(100, 161, 213, 0.59) !important;
+}
+
+.k-state-selected {
+  color: #fff !important;
+  background-color: #64a1d5 !important;
+  border-color: rgba(0, 0, 0, .1) !important;
+}
+
+.k-pager-numbers .k-link, .k-pager-numbers .k-link:link {
+  color: #64a1d5 !important;
+}
+
+  .k-pager-numbers .k-link.k-state-selected, .k-pager-numbers .k-link:link.k-state-selected {
+    color: #fff !important;
+  }
+
+
+.k-block ::selection, .k-widget ::selection {
+  background-color: #64a1d5 !important;
+  color: #fff !important;
+}
+
+.k-icon.k-i-sort-desc-sm:before {
+  content: "\e006" !important;
+  color: black;
+}
+
+.k-icon.k-i-sort-asc-sm:before {
+  content: "\e004" !important;
+  color: black;
+}
+
+.k-grid-header .k-header > .k-link > .k-icon {
+  position: absolute !important;
+}
+
+tr .textRight {
+  text-align: right !important;
+}
+
+tr .headerClass {
+  font-weight: bold !important;
+  text-align: center !important;
+}
+
+.k-grid th {
+  white-space: normal !important;
+}
+
+.k-grid-header .k-header {
+  vertical-align: middle !important;
+}
