@@ -1,0 +1,13 @@
+<div id="toast" class="toast-container">
+    <div class="toast-card" [class.toast-error]="type.error" [class.toast-success]="type.success" [class.toast-info]="type.info" [class.toast-warning]="type.warning">
+        <button *ngIf="type.error || type.warning" (click)="hide()" [class.btn-danger]="type.error" [class.btn-warning]="type.warning" class="btn remove-btn">
+            <!--<i class="fa fa-remove"></i>-->
+            OK
+        </button>
+        <h5 class="toast-title">{{title}}</h5>
+        <p>
+            <!--<span class="glyphicon" [class.glyphicon-info-sign]="type.info" [class.glyphicon-remove-circle]="type.error" [class.glyphicon-ok-circle]="type.success"></span>-->
+            <span class="toast-message">{{message}}</span>
+        </p>
+    </div>
+</div>
