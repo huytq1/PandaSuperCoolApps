@@ -1,10 +1,10 @@
-import { Component, OnInit, Input, KeyValueDiffers } from '@angular/core';
+﻿import { Component, OnInit, Input, KeyValueDiffers } from '@angular/core';
 
 import {CommunicationsHistoryService } from '../../../services/communicationsHistory.service';
 
 import { GridModule, SelectionEvent, GridDataResult, PageChangeEvent, DataStateChangeEvent } from '@progress/kendo-angular-grid';
 import { SortDescriptor, orderBy, State, process } from '@progress/kendo-data-query';
-import { DialogModule } from '@progress/kendo-angular-dialog';
+import {PopupModule } from '@progress/kendo-angular-popup';
 import { CommunicationDetail, CommunicationDocument } from '../../../models/communicationsHistory.model';
 
 @Component({
