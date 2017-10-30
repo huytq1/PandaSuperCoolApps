@@ -1,7 +1,5 @@
 ﻿import { Injectable, Inject } from '@angular/core';
 import { Headers } from '@angular/http';
-import ResultWrappermodel = require("../models/resultWrapper.model");
-import ResultWrapper = ResultWrappermodel.ResultWrapper;
 import { Observable } from 'rxjs/Observable';
 
 @Injectable()
